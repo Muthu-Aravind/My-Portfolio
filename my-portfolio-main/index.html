@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Software Developer</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Software Developer</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          class="section-container-img"
+          src="./assets/photo.jpg"
+          alt=" profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Muthu Aravind</h1>
+        <p class="section__text__p2">Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https:www.linkedin.com/in/muthu-aravind-a35246172')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text___p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p><strong>School:</strong> Sri Sankara Vidhyalaya</p>
+              <p>
+                <strong>College:</strong> St. Joseph's Institute of Technology
+              </p>
+              <p><strong>Degree:</strong> B.E, CSE</p>
+
+              <p><strong>CGPA:</strong> 8.01</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Internship at Kareinfinity Technologies</h3>
+              <p style="margin-top: 10px">
+                <strong>Domain:</strong> Full Stack Development
+              </p>
+              <p><strong>Duration:</strong> 1 Month</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Internship Experience at CAMU Office</h3>
+              <p style="margin-top: 10px">
+                Interned for a month at CAMU in AIML, exploring AI tools and
+                deployment.
+              </p>
+            </div>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/question.png"
+              alt="Experience icon"
+              class="icon"
+              style="opacity: 80%"
+            />
+            <div class="text-container">
+              <h2>Background</h2>
+              <p style="margin-top: 10px; text-align: justify">
+                I am a final-year Computer Science Engineering student at St.
+                Joseph’s Institute of Technology, passionate about leveraging
+                technology to solve real-world problems. I am versatile and
+                adaptable to changing technologies. In my first two years of
+                college, I focused on full-stack development, while my last two
+                years have been dedicated to AI and ML. Proficient in Python,
+                TensorFlow, Angular, and Flutter, I’ve developed impactful
+                projects like smart IoT devices and AI-driven applications. My
+                internships and achievements in hackathons highlight my
+                technical skills and innovative mindset.
+              </p>
+              <br />
+              <p style="text-align: justify">
+                Beyond academics, I have a deep interest in sports, particularly
+                cricket, football, and badminton. I enjoy watching all kinds of
+                sports, and I’m an active badminton player, having won several
+                tournaments. I also have a passion for music and movies, and
+                I’ve participated in many hackathons, winning a few. I am eager
+                to contribute to cutting-edge projects while continuously
+                learning and growing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience" style="margin-top: 60px">
+      <p class="section__text___p1">Explore My</p>
+      <h1 class="title">Skillset</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">My Technical Expertise</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AIML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Html,CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sagemaker</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Languages: Python, C, Java, JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UiPath</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Database: MongoDB, PSql, MySql</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text___p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container project-vertical-container">
+              <img
+                src="./assets/rtod2.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">RTOD</h2>
+            <div class="btn-container">
+              A real-time object detection app using Python, TensorFlow Lite,
+              and Teachable Machine for intuitive recognition and analysis.
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/vis.jpg" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Automated visualize of invoice
+            </h2>
+            <div class="btn-container">
+              Graphical representation of data that automatically extracted from
+              invoice
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/gla1.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Smart Glasses</h2>
+            <div class="btn-container">
+              IoT device designed to empower visually impaired individuals
+              utilizing machine learning algorithms, IoT sensors, and
+              high-resolution cameras to assist them.
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Other Projects</h2>
+            <div class="btn-container">
+              <ul style="text-align: justify">
+                <li>
+                  Mask and Unmasked People Classification using Haar Cascade.
+                </li>
+                <li>End-to-End Application Deployment using AWS SageMaker.</li>
+                <li>CRUD application development using C# and Angular.</li>
+                <li>
+                  React-based projects: To-do List, Weather App, Food Site,
+                  Login Validation, Calculator.
+                </li>
+                <li>Memory Game developed using HTML, CSS, and JavaScript.</li>
+                <li>
+                  AngularJS projects: Form Handling, Query Params, and an
+                  E-commerce Website.
+                </li>
+                <li>
+                  MernGPT: A chatbot application utilizing MERN and open APIs,
+                  enabling seamless interaction and intelligent responses for
+                  enhanced user engagement and experience.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text___p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com"
+              >muthuaravindramachandran@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/muthu-aravind-a35246172/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Muthu Aravind. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
